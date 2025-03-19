@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/text_view_steps"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="steps:0"/>
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/text_view_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Time:00:00:00"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/group"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Buttonstyle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:tag="00"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Buttonstyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/button1"
+            android:tag="01"
+            android:text="2"/>
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Buttonstyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/button2"
+            android:tag="02"
+            android:text="3"/>
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Buttonstyle"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@id/button3"
+            android:tag="03"
+            android:text="4"/>
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Buttonstyle"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/button1"
+            android:tag="10"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button1"
+            android:layout_toEndOf="@id/button1"
+            android:tag="11"
+            android:text="6"/>
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button1"
+            android:layout_toEndOf="@id/button2"
+            android:tag="12"
+            android:text="7"/>
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button1"
+            android:layout_toEndOf="@id/button3"
+            android:tag="13"
+            android:text="8"/>
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Buttonstyle"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/button5"
+            android:tag="20"
+            android:text="9"/>
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button5"
+            android:layout_toEndOf="@id/button1"
+            android:tag="21"
+            android:text="10"/>
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button5"
+            android:layout_toEndOf="@id/button2"
+            android:tag="22"
+            android:text="11"/>
+
+        <Button
+            android:id="@+id/button12"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button5"
+            android:layout_toEndOf="@id/button3"
+            android:tag="23"
+            android:text="12"/>
+
+        <Button
+            android:id="@+id/button13"
+            style="@style/Buttonstyle"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/button9"
+            android:tag="30"
+            android:text="13"/>
+
+        <Button
+            android:id="@+id/button14"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button9"
+            android:layout_toEndOf="@id/button1"
+            android:tag="31"
+            android:text="14"/>
+
+        <Button
+            android:id="@+id/button15"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button9"
+            android:layout_toEndOf="@id/button2"
+            android:tag="32"
+            android:text="15"/>
+
+        <Button
+            android:id="@+id/button16"
+            style="@style/Buttonstyle"
+            android:layout_below="@id/button9"
+            android:layout_toEndOf="@id/button3"
+            android:tag="33"
+            android:text="@color/colorFreeButton"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <Button
+            android:id="@id/button_shuffle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="shuffle" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>
